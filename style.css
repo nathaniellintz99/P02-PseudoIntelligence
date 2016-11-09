@@ -1,0 +1,216 @@
+/* Nathaniel Lintz: p02: Psuedo Intelligence Test */
+
+/*background img for all .html files; img link is cited in bottom right corner of every page*/
+html{
+  background: url(http://i.imgur.com/FYIaKZC.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: white;
+  font-size: 18px;
+  font-weight: 450;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
+}
+br{
+  line-height: 200%;
+}
+/*header font*/
+.header{
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: white;
+  font-size: 36px;
+  font-weight: 500;
+  text-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+.font1{
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: white;
+  font-size: 18px;
+  font-weight: 450;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
+}
+.font2{
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
+}
+.font3{
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: white;
+  font-size: 32px;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
+}
+.box1a{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid white;
+  border-color: white;
+  background-color: none;
+  text-align: center;
+  font-size: 46px;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: white;
+  text-shadow: 2px 2px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+.box1b{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: none;
+  border: 2px;
+  background-color: none;
+  text-align: center;
+  font-size: 46px;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: white;
+  text-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+/* User Input Box Styling */
+.guess1{
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100px;
+  height: 60px;
+  outline: none;
+  border: 0px;
+  background-color: none;
+  text-align: center;
+  font-size: 36px;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: black;
+}
+/* Correct answer, green outline */
+.output1good{
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  background-color: white;
+  border: solid 4px #75FF33;
+  border-radius: 7px;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: black;
+  text-shadow: none;
+}
+/* Incorrect answer, red outline */
+.output1bad{
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  background-color: white;
+  border: solid 4px #C70039;
+  border-radius: 7px;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  color: black;
+  text-shadow: none;
+}
+/*font styling for nav bar*/
+.navfont{
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  text-shadow: 2px 2px rgba(0,0,0,0.2);
+  background-color: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  height: 36px;
+  display: inline-block;
+}
+a.navfont1:hover{
+  background-color: #363636;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  height: 36px;
+  width: 120px;
+  border-radius: 1px;
+  display: inline-block;
+  -webkit-transition: background-color .2s linear;
+  -moz-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  -ms-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+/*gray/black-gradient navbar collumn */
+.navbar{
+  background: #ADADAD;
+  background: -webkit-linear-gradient(#ADADAD, #000000);
+  background: -o-linear-gradient(#ADADAD, #000000);
+  background: -moz-linear-gradient(#ADADAD, #000000);
+  background: linear-gradient(#ADADAD, #000000);
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  border-color: #ADADAD;
+  height: 800px;
+  width: 120px;
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-right: 3%;
+  margin-top: 2%;
+  margin-left: 2%;
+  text-align: center;
+  list-style-type: none;
+}
+/*Columns*/
+.main{
+  float: left;
+  width: 80%;
+  margin-left: 0%;
+}
+.col1{
+  float: left;
+  width: 40%;
+  margin-left: 0%;
+}
+.col2{
+  margin-left: 3%;
+  float: left;
+  width: 35%;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
+.game1Col1{
+  column-width: auto;
+  float: left;
+  margin-left: 0%;
+}
+.game1Col2{
+  column-width: auto;
+  float: left;
+  margin-left: 3%;
+}
+.img-shadow{
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  -khtml-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+/*background image fixed link*/
+.bottom{
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1%;
+  margin-right: 1%;
+  right: 0;
+  text-align: center;
+}

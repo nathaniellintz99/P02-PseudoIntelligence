@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Nathaniel Lintz: p02: Psuedo Intelligence Test
+The project criteria calls for an 'automatic' check answer; onchange does not do this.
+I tried using onkeyup/oninput etc. which did deliver an automatic check but that created other problems
+Solution: -->
+
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Pseudo Intelligence Test: Puzzle3</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="puzzle.js"></script>
+  </head>
+  <body onload="practiceNum(); cookie();">
+    <nav>
+      <ul class="navbar">
+        <li></li>
+        <li>
+          <h1><a class="navfont navfont1" href="index.html">Home</a></h1>
+        </li>
+        <li>
+          <h1><a class="navfont navfont1" href="puzzle1.html">Level 1</a></h1>
+        </li>
+        <li>
+          <h1><a class="navfont navfont1" href="puzzle2.html">Level 2</a></h1>
+        </li>
+        <li>
+          <h1><a class="navfont navfont1" href="puzzle3.html">Level 3</a></h1>
+        </li>
+        <li>
+          <h1><a class="navfont navfont1" href="score.html">Score</a></h1>
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+      <p class="header">Pseudo Intelligence Test Puzzles</p>
+      <a>Press "Enter" to check your answer.</a><br><br>
+    </div>
+    <div class="game1Col1">
+      <span class="box1a" id="randomNum1"></span><span class="box1b">+</span><span class="box1a" id="randomNum2"></span><span class="box1b">=</span><span class="box1a" id="randomAnswer1"></span><br><br>
+      <span class="box1a" id="randomNum3"></span><span class="box1b">+</span><span class="box1a" id="randomNum4"></span><span class="box1b">=</span><span class="box1a" id="randomAnswer2"></span><br><br>
+      <span class="box1a" id="randomNum5"></span><span class="box1b">+</span><span class="box1a" id="randomNum6"></span><span class="box1b">=</span><span class="box1a" id="randomAnswer3"></span><br>
+    </div>
+    <div class="game1Col2">
+      <span class="box1a" id="randomNum7"></span><span class="box1b">+</span><span class="box1a" id="randomNum8"></span><span class="box1b">=</span><span class="box1a" id="randomAnswer4"></span><br><br>
+      <span class="box1a" id="randomNum9"></span><span class="box1b">+</span><span class="box1a" id="randomNum10"></span><span class="box1b">=</span><span class="box1a" id="randomAnswer5"></span><br><br>
+      <span class="box1a" id="randomNum11"></span><span class="box1b">+</span><span class="box1a" id="randomNum12"></span><span class="box1b">=</span>
+      <input type="text" id="input3" class="guess1 img-shadow" placeholder="" onchange="validate3();"/><br><br>
+      <div style="text-align: center" id="verdict3">
+        <a id="output3"/>
+      </div>
+    </div>
+    <div class="bottom">
+      <a class="font2" href="http://imgur.com/gallery/eyIDk" target="_blank">background</a>
+    </div>
+  </body>
+</html>
